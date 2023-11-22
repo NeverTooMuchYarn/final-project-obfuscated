@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Snowed Inn | Contact</title>
+        <meta name="author" content="Lisa Knowles">
+        <meta name="description" content="This is the contact page for the Snowed Inn resort.">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Edu+TAS+Beginner:wght@700&family=Glass+Antiqua&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Edu+TAS+Beginner:wght@700&family=Glass+Antiqua&family=Indie+Flower&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+
+            <h1><a href="index.html">Snowed Inn</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li id="current"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main id="contact">
+            
+            <div id="contact-form">
+                <section>
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                    <p>Required fields marked with a <span class="req">*</span></p>
+                    <img src="images/swiss-peak.jpg" width="350" height="455" alt="A lake surrounded by green trees, with a snowy peak in the background">
+                </section>
+
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                    <label for="my-name">Full Name<span class="req">*</span></label>
+                    <input id="my-name" name="my-name" type="text" required>
+
+                    <label for="my-email">Email Address<span class="req">*</span></label>
+                    <input id="my-email" name="my-email" type="email" required>
+
+                    <label for="my-number">Phone Number<span class="req">*</span></label>
+                    <input id="my-number" name="my-number" type="tel" required>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="req">*</span></legend>
+                        <div>
+                            <input type="radio" name="my-pref-contact" id="pref-email" required>
+                            <label for="pref-email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="my-pref-contact" id="pref-phone" required>
+                            <label for="pref-phone">Phone</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="my-comments">Comments<span class="req">*</span></label>
+                    <textarea name="my-comments" id="my-comments" required></textarea>
+
+                    <input type="submit" name="my-submit" id="my-submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright ©2023 - Snowed Inn</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body> 
+</html>
